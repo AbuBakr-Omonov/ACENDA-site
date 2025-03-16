@@ -26,6 +26,7 @@
     --color-green-400: oklch(0.792 0.209 151.711);
     --color-green-500: oklch(0.723 0.219 149.579);
     --color-green-600: oklch(0.627 0.194 149.214);
+    --color-green-700: oklch(0.527 0.154 150.069);
     --color-sky-500: oklch(0.685 0.169 237.323);
     --color-blue-200: oklch(0.882 0.059 254.128);
     --color-blue-300: oklch(0.809 0.105 251.813);
@@ -551,6 +552,9 @@
   .mt-\[100px\] {
     margin-top: 100px;
   }
+  .mt-\[102px\] {
+    margin-top: 102px;
+  }
   .mt-\[112\] {
     margin-top: 112;
   }
@@ -580,6 +584,9 @@
   }
   .mb-\[8px\] {
     margin-bottom: 8px;
+  }
+  .mb-\[10px\] {
+    margin-bottom: 10px;
   }
   .mb-\[16\] {
     margin-bottom: 16;
@@ -758,6 +765,9 @@
   .h-\[22\] {
     height: 22;
   }
+  .h-\[32px\] {
+    height: 32px;
+  }
   .h-\[56px\] {
     height: 56px;
   }
@@ -802,6 +812,9 @@
   }
   .w-\[30\%\] {
     width: 30%;
+  }
+  .w-\[32px\] {
+    width: 32px;
   }
   .w-\[35\%\] {
     width: 35%;
@@ -1306,6 +1319,15 @@
   .gap-\[20px\] {
     gap: 20px;
   }
+  .gap-\[22\] {
+    gap: 22;
+  }
+  .gap-\[22px\] {
+    gap: 22px;
+  }
+  .gap-\[24px\] {
+    gap: 24px;
+  }
   .gap-\[25px\] {
     gap: 25px;
   }
@@ -1363,6 +1385,9 @@
   .gap-\[104px\] {
     gap: 104px;
   }
+  .gap-\[120px\] {
+    gap: 120px;
+  }
   .gap-\[170px\] {
     gap: 170px;
   }
@@ -1371,6 +1396,9 @@
   }
   .gap-\[200px\] {
     gap: 200px;
+  }
+  .gap-\[242\] {
+    gap: 242;
   }
   .gap-\[px\] {
     gap: px;
@@ -1639,6 +1667,9 @@
   .border-white {
     border-color: var(--color-white);
   }
+  .border-t-\[\#666666\] {
+    border-top-color: #666666;
+  }
   .border-t-\[\#D8D8D8\] {
     border-top-color: #D8D8D8;
   }
@@ -1701,6 +1732,9 @@
   }
   .bg-green-600 {
     background-color: var(--color-green-600);
+  }
+  .bg-green-700 {
+    background-color: var(--color-green-700);
   }
   .bg-indigo-500 {
     background-color: var(--color-indigo-500);
@@ -2041,8 +2075,14 @@
   .py-\[24px\] {
     padding-block: 24px;
   }
+  .py-\[102px\] {
+    padding-block: 102px;
+  }
   .pt-\[15px\] {
     padding-top: 15px;
+  }
+  .pt-\[24px\] {
+    padding-top: 24px;
   }
   .pt-\[25px\] {
     padding-top: 25px;
@@ -2061,6 +2101,9 @@
   }
   .pt-\[64px\] {
     padding-top: 64px;
+  }
+  .pt-\[66px\] {
+    padding-top: 66px;
   }
   .pt-\[98px\] {
     padding-top: 98px;
@@ -2196,6 +2239,9 @@
   }
   .text-\[12px\] {
     font-size: 12px;
+  }
+  .text-\[14px\] {
+    font-size: 14px;
   }
   .text-\[18px\] {
     font-size: 18px;
@@ -2367,6 +2413,9 @@
   .text-\[\#008EC4\] {
     color: #008EC4;
   }
+  .text-\[\#8B8B8B\] {
+    color: #8B8B8B;
+  }
   .text-\[\#8C8C8C\] {
     color: #8C8C8C;
   }
@@ -2378,6 +2427,12 @@
   }
   .text-\[\#404040\] {
     color: #404040;
+  }
+  .text-\[\#BFBFBF\] {
+    color: #BFBFBF;
+  }
+  .text-\[\#F2F2F2\] {
+    color: #F2F2F2;
   }
   .text-\[\#ffff\] {
     color: #ffff;
@@ -3070,6 +3125,11 @@
       }
     }
   }
+  .max-\[1104px\]\:gap-\[90px\] {
+    @media (width < 1104px) {
+      gap: 90px;
+    }
+  }
   .max-\[1100px\]\:gap-\[50px\] {
     @media (width < 1100px) {
       gap: 50px;
@@ -3078,6 +3138,21 @@
   .max-\[1032px\]\:text-\[80px\] {
     @media (width < 1032px) {
       font-size: 80px;
+    }
+  }
+  .max-\[1012px\]\:grid {
+    @media (width < 1012px) {
+      display: grid;
+    }
+  }
+  .max-\[1012px\]\:grid-cols-2 {
+    @media (width < 1012px) {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+  }
+  .max-\[1004px\]\:gap-\[90px\] {
+    @media (width < 1004px) {
+      gap: 90px;
     }
   }
   .max-\[1000px\]\:gap-\[25px\] {
@@ -3604,6 +3679,36 @@
   .max-\[550px\]\:grid-cols-1 {
     @media (width < 550px) {
       grid-template-columns: repeat(1, minmax(0, 1fr));
+    }
+  }
+  .max-\[540px\]\:flex {
+    @media (width < 540px) {
+      display: flex;
+    }
+  }
+  .max-\[540px\]\:grid {
+    @media (width < 540px) {
+      display: grid;
+    }
+  }
+  .max-\[540px\]\:grid-cols-1 {
+    @media (width < 540px) {
+      grid-template-columns: repeat(1, minmax(0, 1fr));
+    }
+  }
+  .max-\[540px\]\:flex-col {
+    @media (width < 540px) {
+      flex-direction: column;
+    }
+  }
+  .max-\[540px\]\:items-start {
+    @media (width < 540px) {
+      align-items: flex-start;
+    }
+  }
+  .max-\[540px\]\:gap-\[10px\] {
+    @media (width < 540px) {
+      gap: 10px;
     }
   }
   .max-\[520px\]\:mb-\[30\] {
